@@ -7,7 +7,9 @@ with 'Mason::Plugin';
 # ABSTRACT: HTML filters
 __END__
 
-=head1 DESCRIPTION
+=head1 NAME
+
+DESCRIPTION
 
 Filters related to HTML generation.
 
@@ -27,7 +29,7 @@ Do a basic HTML escape on the content - just the characters '&', '>', '<', and
 Do a comprehensive HTML escape on the content, using
 HTML::Entities::encode_entities.
 
-=item URI
+=item URI or U
 
 URI-escape the content.
 

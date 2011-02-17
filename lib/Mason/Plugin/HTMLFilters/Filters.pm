@@ -28,6 +28,7 @@ method URI () {
         return $text;
     };
 }
+*U = *URI;
 
 method HTMLPara () {
     sub {
@@ -41,6 +42,15 @@ method HTMLParaBreak () {
         my $text = $_[0];
         $text =~ s|(\r?\n){2,}|$1<br />$1<br />$1|g;
         return $text;
+    };
+}
+
+method FillInForm ($fdat) {
+    require HTML::FillInForm;
+    sub {
+        my $html = $_[0];
+        return $html if !defined($fdat);
+        return HTML::FillInForm->fill( \$html, $fdat );
     };
 }
 
