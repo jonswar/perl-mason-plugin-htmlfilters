@@ -4,14 +4,11 @@ with 'Mason::Plugin';
 
 1;
 
-# ABSTRACT: HTML filters
 __END__
 
 =head1 NAME
 
-DESCRIPTION
-
-Filters related to HTML generation.
+Mason::Plugin::HTMLFilters - Filters related to HTML generation
 
 =head1 FILTERS
 
