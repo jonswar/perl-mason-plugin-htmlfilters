@@ -4,6 +4,8 @@ Revision history for Mason-Plugin-HTMLFilters
 
 0.02  Feb 16, 2011
 
+- Require Mason
+
 0.01  Feb 16, 2011
 
 - Initial version
